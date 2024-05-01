@@ -1,27 +1,17 @@
-# Module 12 Report Template
-
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithm).
+The purpose of the analysis was to build machine learning models to predict loan risk based on financial information. The dataset contained information such as loan size, interest rate, borrower income, and number of accounts, with the target variable being the loan status (0 for healthy loans and 1 for high-risk loans). The analysis involved several stages of the machine learning process, including data preprocessing, model training, and evaluation. We primarily used logistic regression as the algorithm for this analysis.
 
 ## Results
 
-Using bulleted lists, describe the accuracy scores and the precision and recall scores of all machine learning models.
-
 * Machine Learning Model 1:
-    * Description of Model 1 Accuracy, Precision, and Recall scores.
+    * The logistic regression model demonstrated strong performance in predicting loan risk.
+    * Accuracy: 99%
+    * Precision for healthy loans (0): 100%
+    * Recall for healthy loans (0): 100%
+    * Precision for high-risk loans (1): 86%
+    * Recall for high-risk loans (1): 91%
 
 ## Summary
 
-Summarise the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+The logistic regression model appears to perform best among the models evaluated. This conclusion is based on its high accuracy and balanced precision and recall scores for both healthy and high-risk loans. The model's ability to accurately identify both healthy and high-risk loans makes it suitable for assessing loan risk effectively. However, the choice of the best-performing model may depend on the specific problem being addressed. For instance, if it is more critical to accurately predict high-risk loans (1), then the model's performance in terms of precision and recall for that class would be a key consideration. Overall, the logistic regression model offers a reliable solution for predicting loan risk based on the provided financial information.
